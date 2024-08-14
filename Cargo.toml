@@ -1,0 +1,15 @@
+[package]
+name = "openapi-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+schemars = { version = "0.8" }
+okapi = { version = "0.7.0-rc.1"}
+openapi_proc_macro = {path = "./openapi_proc_macro"}
+serde = {version = "1",features = ["derive"]}
+anyhow = "1"
+thiserror = "1"
+axum = {version = "0.5",default-features = true}
